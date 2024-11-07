@@ -10,6 +10,7 @@
 
 ## 📜 Índice
 
+- [ℹ️ Informações](#-informações)
 - [💡 Visão Geral](#-visão-geral)
 - [🎯 Proposta do Projeto](#-proposta-do-projeto)
 - [📈 Contexto e Justificativa](#-contexto-e-justificativa)

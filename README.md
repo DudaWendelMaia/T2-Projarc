@@ -1,9 +1,13 @@
-# 🏬 Sistema de Monitoramento e Controle de Estoque
+Aqui está a versão adaptada para o novo tema: **Gerenciamento de Tarefas com Microsserviços**.
 
-<sub>*Solução escalável e eficiente para gestão de estoque em tempo real para pequenas e médias empresas.*</sub>
+---
+
+# 📝 Aplicativo de Gerenciamento de Tarefas com Microsserviços
+
+<sub>*Uma solução simples e escalável para organizar tarefas, com autenticação de usuários e lembretes automáticos.*</sub>
 
 <div align="center">
- <img height=250 width=250 src="https://media.tenor.com/KSYEM2r0IIAAAAAi/moving-cute-boxes-cat-tired.gif">
+ <img height=250 width=250 src="https://media.tenor.com/Q9rfrj2lA6kAAAAi/smolverse-smol.gif">
 </div>
 
 ---
@@ -18,103 +22,94 @@
 - [💻 Tecnologias Utilizadas](#-tecnologias-utilizadas)
 - [🧩 Funcionalidades](#-funcionalidades)
 - [🏗️ Arquitetura](#%EF%B8%8F-arquitetura)
-- [🔄 Fluxo de Operações](#-fluxo-de-operações)
 - [📥 Instalação e Execução](#-instalação-e-execução)
-- [📊 Benefícios para o Investidor](#-benefícios-para-o-investidor)
+- [📊 Benefícios para o Usuário](#-benefícios-para-o-usuário)
 - [📌 Conclusão](#-conclusão)
 
 ---
+
 ## ℹ️ Informações
 
 - **Status:** Em andamento
 - **Integrantes:** Esthevan Pereira, Lucas Ramon, Maria Eduarda Maia, Maurício Krziminski
-- **Link:** [Link Repositorio](https://github.com/DudaWendelMaia/T2-Projarc.git)
+- **Link:** [Link Repositório](https://github.com/DudaWendelMaia/T2-Projarc.git)
+
 ---
+
 ## 💡 Visão Geral
 
-Este projeto é um **Sistema de Monitoramento e Controle de Estoque** desenvolvido especialmente para **Pequenas e Médias Empresas (PMEs)**. Utilizando uma arquitetura de **microsserviços**, o sistema oferece:
+Este projeto é um **Aplicativo de Gerenciamento de Tarefas** com arquitetura de **microsserviços**. O sistema permite que usuários:
 
-- **Monitoramento em tempo real** de produtos
-- **Alertas automáticos** para reabastecimento
-- **Escalabilidade** para crescer junto com a empresa
-- **Relatórios de desempenho e insights**
+- **Gerenciem suas tarefas** de forma organizada e segura
+- **Recebam lembretes automáticos** para tarefas pendentes
+- **Autentiquem-se facilmente**, garantindo segurança e personalização
 
 ---
 
 ## 🎯 Proposta do Projeto
 
-Desenvolver uma solução capaz de **gerenciar estoques** com eficiência, automatizando o processo de controle e reposição de produtos. A estrutura modular em microsserviços permite uma manutenção simplificada e uma escalabilidade flexível, adequada para o aumento de demandas e operações de vendas.
+Criar um aplicativo para **gerenciar tarefas e agendamentos**, simplificando o processo de criação, atualização e acompanhamento de compromissos. A estrutura em microsserviços garante uma aplicação modular e escalável, adequada para diferentes volumes de usuários e número de tarefas.
 
 ---
 
 ## 📈 Contexto e Justificativa
 
-Em empresas de menor porte, a gestão de estoque é um dos principais desafios. A **falta de produtos** ou **estoque em excesso** impactam diretamente nas finanças. Este sistema:
+Em um mundo cada vez mais acelerado, a **organização de tarefas pessoais e profissionais** tornou-se essencial. Este sistema:
 
-- **Reduz a dependência** de processos manuais
-- **Minimiza perdas** com controle de inventário em tempo real
-- **Facilita a reposição** com alertas automatizados e gestão centralizada
+- **Facilita o gerenciamento de tarefas** com lembretes automáticos
+- **Oferece segurança com autenticação** e gestão de usuários
+- **Fornece um sistema modular** para atender diferentes demandas de escalabilidade e crescimento
 
 ---
 
 ## 🧩 Funcionalidades
 
-O sistema possui várias funcionalidades voltadas para a **eficiência na gestão de estoques**, como:
+O sistema oferece várias funcionalidades voltadas para a **organização pessoal**, incluindo:
 
-1. **Cadastro e Gerenciamento de Produtos**
-   - Adicione, edite e visualize produtos, incluindo dados como categoria, fornecedor e preço.
+1. **Cadastro e Autenticação de Usuários**
+   - Registro e login de usuários com controle de acesso seguro.
 
-2. **Gestão de Estoque em Tempo Real**
-   - Controle de entradas e saídas de produtos com atualizações em tempo real, permitindo consultas rápidas.
+2. **Gerenciamento de Tarefas**
+   - Criação, edição e exclusão de tarefas com opções de prioridade e status.
 
-3. **Notificações e Alertas Automáticos**
-   - Receba alertas quando os produtos estiverem em níveis críticos de estoque, promovendo reabastecimento proativo.
+3. **Notificações e Lembretes Automáticos**
+   - Receba lembretes de tarefas próximas ao vencimento para facilitar o planejamento.
 
-4. **Relatórios e Análises de Estoque**
-   - Geração de relatórios com insights sobre produtos de alta rotatividade, períodos de maior consumo e itens em risco de falta.
+4. **Relatórios e Análises de Tarefas**
+   - Geração de relatórios sobre tarefas concluídas, pendentes e de alta prioridade.
 
-5. **Reabastecimento Automático**
-   - Gera pedidos automáticos para fornecedores quando o estoque atinge níveis baixos, reduzindo a chance de rupturas.
+5. **Integração com Sistema de Lembretes Externos**
+   - Envio de notificações para dispositivos móveis e e-mails.
 
 ---
 
 ## 🏗️ Arquitetura
 
-A arquitetura deste sistema é baseada em **microsserviços**, cada um responsável por uma funcionalidade específica e interligado por um **Gateway de API**.
+A arquitetura do sistema é baseada em **microsserviços**, cada um com uma responsabilidade específica, interligados por um **Gateway de API** para controle de acesso e roteamento.
 
 ### Componentes da Arquitetura:
 
-- **Gateway de API**: Ponto de entrada para todas as requisições, gerenciando autenticação, roteamento e balanceamento de carga.
-- **Cache Distribuído**: Otimiza consultas frequentes, acelerando o tempo de resposta para dados de estoque e produtos.
-- **Microsserviços Independentes**: Cada serviço é isolado e gerencia sua responsabilidade:
-  - **Cadastro de Produtos**: Gerencia informações dos produtos e atualiza o cache.
-  - **Serviço de Estoque**: Registra entradas e saídas, envia alertas de nível crítico.
-  - **Relatórios e Análises**: Gera relatórios de rotatividade e itens críticos.
-  - **Notificações e Alertas**: Envia notificações aos administradores.
-  - **Pedidos e Reabastecimento**: Gera pedidos de reabastecimento automáticos.
-
-### Banco de Dados
-
-Utilizamos o **H2 Database** em ambiente de desenvolvimento e testes, garantindo praticidade sem necessidade de configuração complexa.
+- **Gateway de API**: Centraliza as requisições de autenticação e balanceia o tráfego entre os microsserviços.
+- **Microsserviços Independentes**: Cada serviço é isolado e gerencia uma funcionalidade:
+  - **Autenticação de Usuários**: Gerencia o cadastro e login de usuários, aplicando autenticação segura.
+  - **Gerenciamento de Tarefas**: Cria e gerencia as tarefas de cada usuário, com opções de prioridade e status.
+  - **Notificações e Lembretes**: Envia notificações sobre tarefas pendentes e vencidas.
+- **Banco de Dados em Desenvolvimento**: Utilizamos o **H2 Database** em ambiente de desenvolvimento para simplificar a configuração e execução.
 
 ---
 
-## ⚙️ Configuração do Projeto
+## 💻 Tecnologias Utilizadas
 
-Para configurar o projeto, siga os passos abaixo:
-
-1. **Clone o repositório**:
-   ```bash
-   git clone https://github.com/DudaWendelMaia/T2-Projarc.git
-   cd estoque-microsservicos
-   ```
-
-
-2. **Instalação das Dependências**:
-   - Execute o Maven para instalar as dependências:
-   ```bash
-   mvn clean install
-   ```
+- **Java 17**
+- **Spring Boot 3.3.4**
+- **Spring Data JPA**
+- **Spring Web**
+- **Spring Security** para autenticação e autorização de usuários
+- **H2 Database** para desenvolvimento e testes
+- **Spring Cloud Gateway** e **Eureka** para roteamento e descoberta de serviços
+- **RabbitMQ ou Kafka** para sistema de notificações e mensagens
+- **SpringDoc OpenAPI** para documentação automática da API
+- **MapStruct e Lombok** para simplificação e mapeamento de classes
 
 ---
 
@@ -127,17 +122,20 @@ Para configurar o projeto, siga os passos abaixo:
 
 ### Instruções de Instalação
 
-1. **Configuração das Variáveis de Ambiente**
-   - Verifique que o **Java 17** e o **Maven** estejam corretamente configurados em seu sistema.
+1. **Clone o repositório**:
+   ```bash
+   git clone https://github.com/DudaWendelMaia/T2-Projarc.git
+   cd gerenciador-tarefas-microsservicos
+   ```
 
-2. **Compilação do Projeto**
-   - No diretório raiz do projeto, execute:
+2. **Instalação das Dependências**:
+   - Execute o Maven para instalar as dependências:
    ```bash
    mvn clean install
    ```
 
 3. **Executando a Aplicação**
-   - Para iniciar a aplicação, utilize:
+   - Inicie cada serviço individualmente usando:
    ```bash
    mvn spring-boot:run
    ```
@@ -150,27 +148,15 @@ Para configurar o projeto, siga os passos abaixo:
 
 ---
 
-## 🔄 Fluxo de Operações
+## 📊 Benefícios para o Usuário
 
-1. **Cadastro de Novo Produto**
-   - O administrador insere um novo produto através do gateway, que direciona a requisição ao Serviço de Cadastro. O cache é atualizado com as novas informações.
-
-2. **Atualização de Estoque**
-   - Entradas e saídas de produtos são registradas no Serviço de Estoque. Quando atinge o nível mínimo, um alerta é gerado.
-
-3. **Consultas de Relatórios**
-   - Relatórios são consultados para entender o desempenho do estoque. Dados frequentemente consultados são mantidos no cache.
-
-4. **Pedido de Reabastecimento Automático**
-   - Ao atingir o estoque mínimo, um pedido de reabastecimento é gerado e enviado ao fornecedor. O status do pedido é armazenado temporariamente no cache.
+- **Escalabilidade e Flexibilidade**: A arquitetura modular permite que o sistema cresça conforme a demanda aumenta.
+- **Organização e Produtividade**: Ferramentas de gerenciamento de tarefas e lembretes automáticos tornam a organização mais eficiente.
+- **Segurança e Controle**: Autenticação robusta e proteção de dados para cada usuário.
+- **Acessibilidade e Facilidade de Uso**: Interface amigável e intuitiva, com documentação da API acessível para desenvolvedores.
 
 ---
 
-## 📊 Benefícios para o Investidor
+## 📌 Conclusão
 
-Investir neste sistema proporciona várias vantagens:
-
-- **Escalabilidade e Flexibilidade**: A arquitetura permite o crescimento sem comprometer o desempenho.
-- **Desempenho Otimizado**: Cache reduz o tempo de resposta, melhorando a experiência e aliviando o banco de dados.
-- **Segurança e Controle**: O gateway centraliza a autenticação e controle de tráfego, oferecendo segurança adicional.
-- **Redução de Perdas**: Monitora o estoque continuamente, minimizando perdas e facilitando o controle de inventário.
+Este aplicativo de gerenciamento de tarefas em microsserviços oferece uma solução prática e escalável para organizar compromissos e garantir o cumprimento de prazos. É uma opção eficaz para usuários que buscam uma forma segura e confiável de gerenciar seu tempo e produtividade.

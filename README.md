@@ -27,7 +27,7 @@
 ## ℹ️ Informações
 
 - **Status:** Em andamento
-- **Integrantes:** Esthevan Pereira, Lucas Ramon, Maria Eduarda Maia, Maurício Gaspary
+- **Integrantes:** Esthevan Pereira, Lucas Ramon, Maria Eduarda Maia, Maurício Krziminski
 - **Link:** [Link Repositorio](https://github.com/DudaWendelMaia/T2-Projarc.git)
 ---
 ## 💡 Visão Geral
